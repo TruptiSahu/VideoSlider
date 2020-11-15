@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sticky Navbar | Mini Project 10</title>
+    <title>Video Slider | Mini Project 11</title>
 
     <!-- --------------------------- CSS StyleSheet ---------------------------- -->
     <link rel="stylesheet" href="css/style.css" />
@@ -16,50 +16,24 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="top-navbar">
-        <h2 class="navbar__logo">
-          <span>L</span>
-          <span>O</span>
-          <span>G</span>
-          <span>O</span>
-        </h2>
-        <ul class="navbar__links">
-          <li class="navbar__link">Home</li>
-          <li class="navbar__link">About</li>
-          <li class="navbar__link">Blogs</li>
-          <li class="navbar__link">Menu</li>
-          <li class="navbar__link">Contact us</li>
-        </ul>
-      </div>
-    </header>
-    <section id="home">
-      <h1>Sticky Navbar Using Vanilla JavScript</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-        necessitatibus nisi, optio temporibus rem dolorum veniam consectetur,
-        recusandae ut repudiandae est autem atque omnis vero vel. Sunt dolor
-        doloremque ducimus quo architecto repellat ad culpa earum voluptatem,
-        nesciunt perspiciatis laboriosam distinctio facere, voluptas, quis
-        blanditiis itaque porro possimus repellendus reiciendis sapiente
-        temporibus! Commodi ea molestias tempora accusantium laudantium tempore
-        et soluta exercitationem molestiae! Aperiam, quae eos perspiciatis harum
-        laudantium quasi molestiae tempora beatae deserunt, eveniet impedit
-        vitae doloremque doloribus porro blanditiis? Dignissimos odit quia a
-        dolorem magnam necessitatibus iure totam ab optio, unde ut delectus
-        suscipit nisi, impedit, quaerat ea?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quo
-        quas a accusantium dicta facere repellat voluptatibus deleniti sequi
-        facilis eveniet commodi omnis, sapiente ullam placeat fugit libero hic
-        voluptates cum laborum ad ducimus nostrum? Ab culpa repudiandae labore
-        vel itaque? Nesciunt, architecto mollitia! Maiores sit exercitationem,
-        amet repudiandae dolorum dolore molestias alias error aliquam repellat!
-        Asperiores exercitationem facilis eveniet, odit non quibusdam labore!
-        Tenetur ratione delectus quam adipisci unde exercitationem, ab,
-        repudiandae veritatis officiis debitis consectetur ipsam amet itaque?
-      </p>
-    </section>
+    <div class="slider">
+      <video class="slider__video" autoplay loop muted>
+        <source src="video/1.mp4" type="video/mp4" />
+      </video>
+      <ul class="slider__slides">
+        <li class="slider__slide">
+          <img src="/img/video-thumbnail-1.PNG" alt="" />
+        </li>
+        <li class="slider__slide">
+          <img src="/img/video-thumbnail-2.PNG" alt="" />
+        </li>
+        <li class="slider__slide">
+          <img src="/img/video-thumbnail-3.PNG" alt="" />
+        </li>
+        <li class="slider__slide">
+          <img src="/img/video-thumbnail-4.PNG" alt="" />
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

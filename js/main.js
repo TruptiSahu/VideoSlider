@@ -1,11 +1,11 @@
-const navbar = document.querySelector('.top-navbar');
+const video = document.querySelector('.slider__video');
+const sliderVideos = document.querySelectorAll('.slider__slide');
 
-function navbarHandler() {
-  if (window.scrollY > 0) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
+let i = 0;
+
+for (sliderVideo of sliderVideos) {
+  sliderVideo.addEventListener('click', () => {
+    video.src = `../video/${i + 1}.mp4`;
+    i++;
+  });
 }
-
-document.addEventListener('scroll', navbarHandler);
